@@ -1,0 +1,30 @@
+﻿Restoring NuGet packages...
+To prevent NuGet from restoring packages during build, open the Visual Studio Options dialog, click on the Package Manager node and uncheck 'Allow NuGet to download missing packages during build.'
+1>------ Build started: Project: GeekDataModels, Configuration: Debug Any CPU ------
+1>C:\Users\lokendra\source\repos\HAILaGEEK\HAILaGEEKModels\GeekDataModels.csproj : warning NU1701: Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.
+1>GeekDataModels -> C:\Users\lokendra\source\repos\HAILaGEEK\HAILaGEEKModels\bin\Debug\netcoreapp2.1\GeekDataModels.dll
+1>Done building project "GeekDataModels.csproj".
+2>------ Build started: Project: GeekRepository, Configuration: Debug Any CPU ------
+2>C:\Users\lokendra\source\repos\HAILaGEEK\HAILaGeekRepository\GeekRepository.csproj : warning NU1701: Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.
+2>CSC : warning CS8032: An instance of analyzer Microsoft.EntityFrameworkCore.RawSqlStringInjectionDiagnosticAnalyzer cannot be created from C:\Users\lokendra\.nuget\packages\microsoft.entityframeworkcore.analyzers\2.2.4\analyzers\dotnet\cs\Microsoft.EntityFrameworkCore.Analyzers.dll : Could not load file or assembly 'Microsoft.CodeAnalysis, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..
+2>Repository.cs(65,30,65,32): warning CS0168: The variable 'ex' is declared but never used
+2>GeekRepository -> C:\Users\lokendra\source\repos\HAILaGEEK\HAILaGeekRepository\bin\Debug\netcoreapp2.1\GeekRepository.dll
+2>Done building project "GeekRepository.csproj".
+3>------ Build started: Project: GeekServics, Configuration: Debug Any CPU ------
+3>C:\Users\lokendra\source\repos\HAILaGEEK\DBL\GeekServics.csproj : warning NU1701: Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.
+3>CSC : warning CS8032: An instance of analyzer Microsoft.EntityFrameworkCore.RawSqlStringInjectionDiagnosticAnalyzer cannot be created from C:\Users\lokendra\.nuget\packages\microsoft.entityframeworkcore.analyzers\2.2.4\analyzers\dotnet\cs\Microsoft.EntityFrameworkCore.Analyzers.dll : Could not load file or assembly 'Microsoft.CodeAnalysis, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..
+3>HomeService.cs(43,13,43,42): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.
+3>HomeService.cs(33,35,33,41): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+3>HomeService.cs(58,42,58,53): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+3>HomeService.cs(82,36,82,47): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+3>UserService.cs(86,36,86,42): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+3>GeekServics -> C:\Users\lokendra\source\repos\HAILaGEEK\DBL\bin\Debug\netcoreapp2.1\GeekServics.dll
+3>Done building project "GeekServics.csproj".
+4>------ Build started: Project: GeekCoreWebAPI, Configuration: Debug Any CPU ------
+4>C:\Users\lokendra\source\repos\HAILaGEEK\HAILaGEEKWebAPI\GeekCoreWebAPI.csproj : warning NU1701: Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.
+4>CSC : warning CS8032: An instance of analyzer Microsoft.EntityFrameworkCore.RawSqlStringInjectionDiagnosticAnalyzer cannot be created from C:\Users\lokendra\.nuget\packages\microsoft.entityframeworkcore.analyzers\2.2.4\analyzers\dotnet\cs\Microsoft.EntityFrameworkCore.Analyzers.dll : Could not load file or assembly 'Microsoft.CodeAnalysis, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..
+4>Controllers\HomeController.cs(101,30,101,32): warning CS0168: The variable 'ex' is declared but never used
+4>Controllers\UsersController.cs(119,42,119,52): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+4>GeekCoreWebAPI -> C:\Users\lokendra\source\repos\HAILaGEEK\HAILaGEEKWebAPI\bin\Debug\netcoreapp2.1\GeekCoreWebAPI.dll
+4>Done building project "GeekCoreWebAPI.csproj".
+========== Build: 4 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
